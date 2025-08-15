@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">>
+<head>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>My Portfolio </title>
+    <!-- Linking main stylesheet  -->
+<link rel="stylesheet" href="style.css">
+</head> 
+<body>
+     <header> 
+     <h1>Harini Palli</h1>
+    <p>Web Developer | Tech enthusiastic | CS undergraduate </p>
+     </header>
+<!-- Simple navigation — could add a burger menu for mobile later -->
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li> <!-- Might change wording to 'Who am I?' -->
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <!-- Maybe add a photo here once I find one I like -->
+    <p>
+Hey i'm Harini Palli, a passionate learner exploring web development, UI/UX design, and cloud technologies.
+I love turning ideas into interactive, user-friendly experiences and continuously building my skills through real-world projects and certifications.
+    </p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <!-- Might need to make these clickable with screenshots later -->
+    <div class="project">
+        <h3>My Daily Glow</h3>
+        <p>My Daily Glow – A Figma-based wellness and productivity app concept that helps users build personalized daily routines,
+             track progress, and maintain a balanced lifestyle through a clean, minimal UI.</p>
+    </div>
+</section>
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <!-- Contact form (still need to hook up to backend or email service) -->
+    <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+
+        <!-- TODO: Maybe disable button until all fields are filled -->
+        <button type="submit">Send</button>
+    </form>
+
+    <!-- This will show form submission status (success/error) -->
+    <p id="formStatus"></p>
+</section>
+
+<footer>
+    <p>© 2025 Harini Palli | Designed & Developed by Harini Palli</p>
+</footer>
+
+<!-- Linking JavaScript (currently just handles form submission alert) -->
+<script src="script.js"></script>
+</body>
+</html>
